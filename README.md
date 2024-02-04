@@ -11,3 +11,29 @@ This repository provides some basic analysis of the issues of the [Ruby on Rail]
 
 Setup
 ---
+- Install all the dependencies
+  - First, install the torch and cudatoolkit using the below script
+    - For Windows
+     ```bash
+     pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+    ```
+     
+     - For Linux /Mac
+    ```bash
+      pip3 install torch torchvision torchaudio
+    ```
+     
+  - Then, Install the other requirements, using the below script
+  ```bash
+  pip install requriements.txt
+  ```
+- create an `env.json` file in the directory and store the username and password, such as shown as:
+  ```bash
+  {
+    "username": "YOUR_USERNAME",
+    "password": "YOUR_PASSWORD"
+  }
+  ```
+Code Execution
+---
+Now, everything is ready, execute the code in the Jupyter Notebook file, `rails_issues_analysis.ipynb`
